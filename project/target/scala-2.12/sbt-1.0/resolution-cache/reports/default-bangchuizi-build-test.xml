@@ -9,8 +9,659 @@
 		extra-sbtVersion="1.0"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190714155451"/>
+		date="20190910165531"/>
 	<dependencies>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.7" status="release" pubdate="20180927163203" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2637" time="0" location="/home/xxh/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="https://oss.sonatype.org/content/repositories/releases/org/scala-lang/scala-reflect/2.12.7/scala-reflect-2.12.7.pom"/>
+				<caller organisation="com.thoughtworks.enableIf" name="enableif_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.1.7"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3616372" time="0" location="/home/xxh/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.7.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.sbt-best-practice" name="sbt-best-practice">
+			<revision name="7.1.1+30-e02c4a9e" status="release" pubdate="20190831134757" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/sbt-best-practice" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="12">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="7380" time="1472" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/sbt-best-practice/ivy-7.1.1+30-e02c4a9e.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/sbt-best-practice/ivy-7.1.1+30-e02c4a9e.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/sbt-best-practice_2.12_1.0/7.1.1+30-e02c4a9e/sbt-best-practice-7.1.1+30-e02c4a9e.pom"/>
+				<caller organisation="default" name="bangchuizi-build" conf="test, compile, runtime" rev="latest.release" rev-constraint-default="latest.release" rev-constraint-dynamic="latest.release" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-best-practice" type="jar" ext="jar" status="successful" details="" size="335" time="1513" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/sbt-best-practice/jars/sbt-best-practice-7.1.1+30-e02c4a9e.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/sbt-best-practice_2.12_1.0/7.1.1+30-e02c4a9e/sbt-best-practice-7.1.1+30-e02c4a9e.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.sbt-api-mappings" name="sbt-api-mappings">
+			<revision name="3.0.0" status="release" pubdate="20181023141920" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/sbt-api-mappings" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="62">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="4753" time="753" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-api-mappings/sbt-api-mappings/ivy-3.0.0.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-api-mappings/sbt-api-mappings/ivy-3.0.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-api-mappings/sbt-api-mappings_2.12_1.0/3.0.0/sbt-api-mappings-3.0.0.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="sbt-best-practice" conf="default, compile, runtime, master" rev="3.0.0" rev-constraint-default="3.0.0" rev-constraint-dynamic="3.0.0" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-api-mappings" type="jar" ext="jar" status="successful" details="" size="56741" time="2351" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-api-mappings/sbt-api-mappings/jars/sbt-api-mappings-3.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-api-mappings/sbt-api-mappings_2.12_1.0/3.0.0/sbt-api-mappings-3.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.extractor" name="extractor_2.12">
+			<revision name="2.1.1" status="release" pubdate="20180810141510" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/Extractor.scala" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="63">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="successful" details="" size="2678" time="720" location="/home/xxh/.ivy2/cache/com.thoughtworks.extractor/extractor_2.12/ivy-2.1.1.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.thoughtworks.extractor/extractor_2.12/ivy-2.1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/extractor/extractor_2.12/2.1.1/extractor_2.12-2.1.1.pom"/>
+				<caller organisation="com.thoughtworks.sbt-api-mappings" name="sbt-api-mappings" conf="compile, runtime" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="3.0.0"/>
+				<artifacts>
+					<artifact name="extractor_2.12" type="jar" ext="jar" status="successful" details="" size="20116" time="1045" location="/home/xxh/.ivy2/cache/com.thoughtworks.extractor/extractor_2.12/jars/extractor_2.12-2.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/extractor/extractor_2.12/2.1.1/extractor_2.12-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lihaoyi" name="sourcecode_2.12">
+			<revision name="0.1.7" status="release" pubdate="20190608004707" resolver="public" artresolver="public" homepage="https://github.com/lihaoyi/sourcecode" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+				<license name="MIT" url="http://www.opensource.org/licenses/mit-license.html"/>
+				<metadata-artifact status="successful" details="" size="2045" time="759" location="/home/xxh/.ivy2/cache/com.lihaoyi/sourcecode_2.12/ivy-0.1.7.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.lihaoyi/sourcecode_2.12/ivy-0.1.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.1.7/sourcecode_2.12-0.1.7.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="sbt-best-practice" conf="default, compile, runtime, master" rev="0.1.7" rev-constraint-default="0.1.7" rev-constraint-dynamic="0.1.7" callerrev="7.1.1+30-e02c4a9e"/>
+				<artifacts>
+					<artifact name="sourcecode_2.12" type="bundle" ext="jar" status="successful" details="" size="110075" time="890" location="/home/xxh/.ivy2/cache/com.lihaoyi/sourcecode_2.12/bundles/sourcecode_2.12-0.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.12/0.1.7/sourcecode_2.12-0.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.sbt-best-practice" name="skip-duplicate-java-publish">
+			<revision name="7.1.1+30-e02c4a9e" status="release" pubdate="20190831134745" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/sbt-best-practice" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="60">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="3311" time="1030" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/skip-duplicate-java-publish/ivy-7.1.1+30-e02c4a9e.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/skip-duplicate-java-publish/ivy-7.1.1+30-e02c4a9e.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/skip-duplicate-java-publish_2.12_1.0/7.1.1+30-e02c4a9e/skip-duplicate-java-publish-7.1.1+30-e02c4a9e.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="sbt-best-practice" conf="default, compile, runtime, master" rev="7.1.1+30-e02c4a9e" rev-constraint-default="7.1.1+30-e02c4a9e" rev-constraint-dynamic="7.1.1+30-e02c4a9e" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="skip-duplicate-java-publish" type="jar" ext="jar" status="successful" details="" size="5325" time="1818" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/skip-duplicate-java-publish/jars/skip-duplicate-java-publish-7.1.1+30-e02c4a9e.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/skip-duplicate-java-publish_2.12_1.0/7.1.1+30-e02c4a9e/skip-duplicate-java-publish-7.1.1+30-e02c4a9e.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.sbt-best-practice" name="subdirectory-organization">
+			<revision name="7.1.1+30-e02c4a9e" status="release" pubdate="20190831134751" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/sbt-best-practice" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="59">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="3305" time="2635" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/subdirectory-organization/ivy-7.1.1+30-e02c4a9e.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/subdirectory-organization/ivy-7.1.1+30-e02c4a9e.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/subdirectory-organization_2.12_1.0/7.1.1+30-e02c4a9e/subdirectory-organization-7.1.1+30-e02c4a9e.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="sbt-best-practice" conf="default, compile, runtime, master" rev="7.1.1+30-e02c4a9e" rev-constraint-default="7.1.1+30-e02c4a9e" rev-constraint-dynamic="7.1.1+30-e02c4a9e" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="subdirectory-organization" type="jar" ext="jar" status="successful" details="" size="6059" time="1289" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/subdirectory-organization/jars/subdirectory-organization-7.1.1+30-e02c4a9e.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/subdirectory-organization_2.12_1.0/7.1.1+30-e02c4a9e/subdirectory-organization-7.1.1+30-e02c4a9e.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.sbt-best-practice" name="detect-scala-organization">
+			<revision name="7.1.1+30-e02c4a9e" status="release" pubdate="20190831134753" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/sbt-best-practice" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="58">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="3305" time="999" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/detect-scala-organization/ivy-7.1.1+30-e02c4a9e.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/detect-scala-organization/ivy-7.1.1+30-e02c4a9e.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/detect-scala-organization_2.12_1.0/7.1.1+30-e02c4a9e/detect-scala-organization-7.1.1+30-e02c4a9e.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="sbt-best-practice" conf="default, compile, runtime, master" rev="7.1.1+30-e02c4a9e" rev-constraint-default="7.1.1+30-e02c4a9e" rev-constraint-dynamic="7.1.1+30-e02c4a9e" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="detect-scala-organization" type="jar" ext="jar" status="successful" details="" size="5364" time="1416" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/detect-scala-organization/jars/detect-scala-organization-7.1.1+30-e02c4a9e.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/detect-scala-organization_2.12_1.0/7.1.1+30-e02c4a9e/detect-scala-organization-7.1.1+30-e02c4a9e.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.sbt-best-practice" name="publish-unidoc">
+			<revision name="7.1.1+30-e02c4a9e" status="release" pubdate="20190831134803" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/sbt-best-practice" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="3703" time="1828" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/publish-unidoc/ivy-7.1.1+30-e02c4a9e.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/publish-unidoc/ivy-7.1.1+30-e02c4a9e.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/publish-unidoc_2.12_1.0/7.1.1+30-e02c4a9e/publish-unidoc-7.1.1+30-e02c4a9e.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="sbt-best-practice" conf="default, compile, runtime, master" rev="7.1.1+30-e02c4a9e" rev-constraint-default="7.1.1+30-e02c4a9e" rev-constraint-dynamic="7.1.1+30-e02c4a9e" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="publish-unidoc" type="jar" ext="jar" status="successful" details="" size="11533" time="5220" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/publish-unidoc/jars/publish-unidoc-7.1.1+30-e02c4a9e.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/publish-unidoc_2.12_1.0/7.1.1+30-e02c4a9e/publish-unidoc-7.1.1+30-e02c4a9e.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.sbt-best-practice" name="travis">
+			<revision name="7.1.1+30-e02c4a9e" status="release" pubdate="20190831134804" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/sbt-best-practice" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="24">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="5341" time="1009" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/travis/ivy-7.1.1+30-e02c4a9e.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/travis/ivy-7.1.1+30-e02c4a9e.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/travis_2.12_1.0/7.1.1+30-e02c4a9e/travis-7.1.1+30-e02c4a9e.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="sbt-best-practice" conf="default, compile, runtime, master" rev="7.1.1+30-e02c4a9e" rev-constraint-default="7.1.1+30-e02c4a9e" rev-constraint-dynamic="7.1.1+30-e02c4a9e" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="travis" type="jar" ext="jar" status="successful" details="" size="47066" time="4158" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/travis/jars/travis-7.1.1+30-e02c4a9e.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/travis_2.12_1.0/7.1.1+30-e02c4a9e/travis-7.1.1+30-e02c4a9e.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.dsl" name="keywords-return_2.12">
+			<revision name="1.5.1" status="release" pubdate="20190729163555" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/Dsl.scala" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="3249" time="843" location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/keywords-return_2.12/ivy-1.5.1.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/keywords-return_2.12/ivy-1.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/dsl/keywords-return_2.12/1.5.1/keywords-return_2.12-1.5.1.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="travis" conf="compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="7.1.1+30-e02c4a9e"/>
+				<artifacts>
+					<artifact name="keywords-return_2.12" type="jar" ext="jar" status="successful" details="" size="7044" time="782" location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/keywords-return_2.12/jars/keywords-return_2.12-1.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/dsl/keywords-return_2.12/1.5.1/keywords-return_2.12-1.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.dsl" name="keywords-continue_2.12">
+			<revision name="1.5.1" status="release" pubdate="20190729164854" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/Dsl.scala" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="3475" time="807" location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/keywords-continue_2.12/ivy-1.5.1.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/keywords-continue_2.12/ivy-1.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/dsl/keywords-continue_2.12/1.5.1/keywords-continue_2.12-1.5.1.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="travis" conf="compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="7.1.1+30-e02c4a9e"/>
+				<artifacts>
+					<artifact name="keywords-continue_2.12" type="jar" ext="jar" status="successful" details="" size="8794" time="854" location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/keywords-continue_2.12/jars/keywords-continue_2.12-1.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/dsl/keywords-continue_2.12/1.5.1/keywords-continue_2.12-1.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.dsl" name="keywords-each_2.12">
+			<revision name="1.5.1" status="release" pubdate="20190729163755" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/Dsl.scala" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="3620" time="849" location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/keywords-each_2.12/ivy-1.5.1.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/keywords-each_2.12/ivy-1.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/dsl/keywords-each_2.12/1.5.1/keywords-each_2.12-1.5.1.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="travis" conf="compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="7.1.1+30-e02c4a9e"/>
+				<artifacts>
+					<artifact name="keywords-each_2.12" type="jar" ext="jar" status="successful" details="" size="12573" time="779" location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/keywords-each_2.12/jars/keywords-each_2.12-1.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/dsl/keywords-each_2.12/1.5.1/keywords-each_2.12-1.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.dsl" name="keywords-shift_2.12">
+			<revision name="1.5.1" status="release" pubdate="20190729163832" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/Dsl.scala" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="3037" time="880" location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/keywords-shift_2.12/ivy-1.5.1.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/keywords-shift_2.12/ivy-1.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/dsl/keywords-shift_2.12/1.5.1/keywords-shift_2.12-1.5.1.pom"/>
+				<caller organisation="com.thoughtworks.dsl" name="keywords-each_2.12" conf="compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="1.5.1"/>
+				<artifacts>
+					<artifact name="keywords-shift_2.12" type="jar" ext="jar" status="successful" details="" size="20584" time="1614" location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/keywords-shift_2.12/jars/keywords-shift_2.12-1.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/dsl/keywords-shift_2.12/1.5.1/keywords-shift_2.12-1.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.dsl" name="dsl_2.12">
+			<revision name="1.5.1" status="release" pubdate="20190729163721" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/Dsl.scala" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="3014" time="880" location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/dsl_2.12/ivy-1.5.1.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/dsl_2.12/ivy-1.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/dsl/dsl_2.12/1.5.1/dsl_2.12-1.5.1.pom"/>
+				<caller organisation="com.thoughtworks.dsl" name="keywords-continue_2.12" conf="compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="1.5.1"/>
+				<caller organisation="com.thoughtworks.dsl" name="keywords-each_2.12" conf="compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="1.5.1"/>
+				<caller organisation="com.thoughtworks.dsl" name="keywords-shift_2.12" conf="compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="1.5.1"/>
+				<caller organisation="com.thoughtworks.dsl" name="keywords-return_2.12" conf="compile, runtime" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="1.5.1"/>
+				<artifacts>
+					<artifact name="dsl_2.12" type="jar" ext="jar" status="successful" details="" size="49291" time="1584" location="/home/xxh/.ivy2/cache/com.thoughtworks.dsl/dsl_2.12/jars/dsl_2.12-1.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/dsl/dsl_2.12/1.5.1/dsl_2.12-1.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.enableIf" name="enableif_2.12">
+			<revision name="1.1.7" status="release" pubdate="20190611020814" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/enableIf.scala" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="3294" time="807" location="/home/xxh/.ivy2/cache/com.thoughtworks.enableIf/enableif_2.12/ivy-1.1.7.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.thoughtworks.enableIf/enableif_2.12/ivy-1.1.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/enableIf/enableif_2.12/1.1.7/enableif_2.12-1.1.7.pom"/>
+				<caller organisation="com.thoughtworks.dsl" name="keywords-each_2.12" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="1.5.1"/>
+				<caller organisation="com.thoughtworks.dsl" name="dsl_2.12" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="1.5.1"/>
+				<artifacts>
+					<artifact name="enableif_2.12" type="jar" ext="jar" status="successful" details="" size="24064" time="1138" location="/home/xxh/.ivy2/cache/com.thoughtworks.enableIf/enableif_2.12/jars/enableif_2.12-1.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/enableIf/enableif_2.12/1.1.7/enableif_2.12-1.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.yaml" name="snakeyaml">
+			<revision name="1.25" status="release" pubdate="20190814031836" resolver="public" artresolver="public" homepage="http://www.snakeyaml.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="37711" time="1784" location="/home/xxh/.ivy2/cache/org.yaml/snakeyaml/ivy-1.25.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/org.yaml/snakeyaml/ivy-1.25.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.25/snakeyaml-1.25.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="travis" conf="compile, runtime" rev="1.25" rev-constraint-default="1.25" rev-constraint-dynamic="1.25" callerrev="7.1.1+30-e02c4a9e"/>
+				<artifacts>
+					<artifact name="snakeyaml" type="bundle" ext="jar" status="successful" details="" size="303487" time="7219" location="/home/xxh/.ivy2/cache/org.yaml/snakeyaml/bundles/snakeyaml-1.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.25/snakeyaml-1.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="sbt-scalajs">
+			<revision name="0.6.28" status="release" pubdate="20190523180938" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" homepage="https://www.scala-js.org/" extra-scalaVersion="2.12" extra-sbtVersion="1.0" extra-info.apiURL="http://www.scala-js.org/api/sbt-scalajs/0.6.28/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="27">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2304" time="2233" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/org.scala-js/sbt-scalajs/ivy-0.6.28.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/org.scala-js/sbt-scalajs/ivy-0.6.28.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.12/sbt_1.0/0.6.28/ivys/ivy.xml"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="travis" conf="compile, runtime" rev="0.6.28" rev-constraint-default="0.6.28" rev-constraint-dynamic="0.6.28" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-scalajs" type="jar" ext="jar" status="successful" details="" size="209479" time="5671" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/org.scala-js/sbt-scalajs/jars/sbt-scalajs-0.6.28.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.12/sbt_1.0/0.6.28/jars/sbt-scalajs.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.portable-scala" name="sbt-platform-deps">
+			<revision name="1.0.0" status="release" pubdate="20180410114715" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" homepage="https://github.com/portable-scala/sbt-platform-deps" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="48">
+				<license name="BSD 3-Clause" url="https://github.com/portable-scala/sbt-platform-deps/blob/master/LICENSE"/>
+				<metadata-artifact status="successful" details="" size="2437" time="2777" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/org.portable-scala/sbt-platform-deps/ivy-1.0.0.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/org.portable-scala/sbt-platform-deps/ivy-1.0.0.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.portable-scala/sbt-platform-deps/scala_2.12/sbt_1.0/1.0.0/ivys/ivy.xml"/>
+				<caller organisation="org.scala-js" name="sbt-scalajs" conf="compile" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.6.28" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-platform-deps" type="jar" ext="jar" status="successful" details="" size="15047" time="2347" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/org.portable-scala/sbt-platform-deps/jars/sbt-platform-deps-1.0.0.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.portable-scala/sbt-platform-deps/scala_2.12/sbt_1.0/1.0.0/jars/sbt-platform-deps.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="scalajs-sbt-test-adapter_2.12">
+			<revision name="0.6.28" status="release" pubdate="20190524000432" resolver="public" artresolver="public" homepage="https://www.scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-sbt-test-adapter/0.6.28/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="46">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2655" time="928" location="/home/xxh/.ivy2/cache/org.scala-js/scalajs-sbt-test-adapter_2.12/ivy-0.6.28.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/org.scala-js/scalajs-sbt-test-adapter_2.12/ivy-0.6.28.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-sbt-test-adapter_2.12/0.6.28/scalajs-sbt-test-adapter_2.12-0.6.28.pom"/>
+				<caller organisation="org.scala-js" name="sbt-scalajs" conf="compile" rev="0.6.28" rev-constraint-default="0.6.28" rev-constraint-dynamic="0.6.28" callerrev="0.6.28" extra-info.apiURL="http://www.scala-js.org/api/scalajs-sbt-test-adapter/0.6.28/"/>
+				<artifacts>
+					<artifact name="scalajs-sbt-test-adapter_2.12" type="jar" ext="jar" status="successful" details="" size="150702" time="5300" location="/home/xxh/.ivy2/cache/org.scala-js/scalajs-sbt-test-adapter_2.12/jars/scalajs-sbt-test-adapter_2.12-0.6.28.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-sbt-test-adapter_2.12/0.6.28/scalajs-sbt-test-adapter_2.12-0.6.28.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-sbt" name="test-interface">
+			<revision name="1.0" status="release" pubdate="20150507162859" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-sbt.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<license name="BSD" url="https://github.com/sbt/test-interface/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2584" time="0" location="/home/xxh/.ivy2/cache/org.scala-sbt/test-interface/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="file:////home/xxh/.sbt/preloaded/org.scala-sbt/test-interface/1.0/ivys/ivy.xml"/>
+				<caller organisation="org.scala-js" name="scalajs-sbt-test-adapter_2.12" conf="default, compile, runtime, master" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.6.28"/>
+				<artifacts>
+					<artifact name="test-interface" type="jar" ext="jar" status="no" details="" size="14755" time="0" location="/home/xxh/.ivy2/cache/org.scala-sbt/test-interface/jars/test-interface-1.0.jar">
+						<origin-location is-local="false" location="file:////home/xxh/.sbt/preloaded/org.scala-sbt/test-interface/1.0/jars/test-interface.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="scalajs-js-envs_2.12">
+			<revision name="0.6.28" status="release" pubdate="20190524000421" resolver="public" artresolver="public" homepage="https://www.scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-js-envs/0.6.28/" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="43">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3019" time="1507" location="/home/xxh/.ivy2/cache/org.scala-js/scalajs-js-envs_2.12/ivy-0.6.28.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/org.scala-js/scalajs-js-envs_2.12/ivy-0.6.28.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-js-envs_2.12/0.6.28/scalajs-js-envs_2.12-0.6.28.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-sbt-test-adapter_2.12" conf="default, compile, runtime, master" rev="0.6.28" rev-constraint-default="0.6.28" rev-constraint-dynamic="0.6.28" callerrev="0.6.28"/>
+				<caller organisation="org.scala-js" name="sbt-scalajs" conf="compile" rev="0.6.28" rev-constraint-default="0.6.28" rev-constraint-dynamic="0.6.28" callerrev="0.6.28" extra-info.apiURL="http://www.scala-js.org/api/scalajs-js-envs/0.6.28/"/>
+				<artifacts>
+					<artifact name="scalajs-js-envs_2.12" type="jar" ext="jar" status="successful" details="" size="233179" time="8734" location="/home/xxh/.ivy2/cache/org.scala-js/scalajs-js-envs_2.12/jars/scalajs-js-envs_2.12-0.6.28.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-js-envs_2.12/0.6.28/scalajs-js-envs_2.12-0.6.28.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.webjars" name="envjs">
+			<revision name="1.2" status="release" pubdate="20131222011238" resolver="public" artresolver="public" homepage="http://webjars.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="successful" details="" size="2816" time="929" location="/home/xxh/.ivy2/cache/org.webjars/envjs/ivy-1.2.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/org.webjars/envjs/ivy-1.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/webjars/envjs/1.2/envjs-1.2.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-js-envs_2.12" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.6.28"/>
+				<artifacts>
+					<artifact name="envjs" type="jar" ext="jar" status="successful" details="" size="161775" time="2609" location="/home/xxh/.ivy2/cache/org.webjars/envjs/jars/envjs-1.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/webjars/envjs/1.2/envjs-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.mozilla" name="rhino">
+			<revision name="1.7.6" status="release" pubdate="20150416044755" resolver="public" artresolver="public" homepage="https://developer.mozilla.org/en/Rhino" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="Mozilla Public License, Version 2.0" url="http://www.mozilla.org/MPL/2.0/index.txt"/>
+				<metadata-artifact status="successful" details="" size="1320" time="1146" location="/home/xxh/.ivy2/cache/org.mozilla/rhino/ivy-1.7.6.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/org.mozilla/rhino/ivy-1.7.6.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/mozilla/rhino/1.7.6/rhino-1.7.6.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-js-envs_2.12" conf="default, compile, runtime, master" rev="1.7.6" rev-constraint-default="1.7.6" rev-constraint-dynamic="1.7.6" callerrev="0.6.28"/>
+				<artifacts>
+					<artifact name="rhino" type="jar" ext="jar" status="successful" details="" size="1188593" time="18819" location="/home/xxh/.ivy2/cache/org.mozilla/rhino/jars/rhino-1.7.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/mozilla/rhino/1.7.6/rhino-1.7.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="scalajs-tools_2.12">
+			<revision name="0.6.28" status="release" pubdate="20190524000300" resolver="public" artresolver="public" homepage="https://www.scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-tools/0.6.28/" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="28">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="3012" time="1262" location="/home/xxh/.ivy2/cache/org.scala-js/scalajs-tools_2.12/ivy-0.6.28.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/org.scala-js/scalajs-tools_2.12/ivy-0.6.28.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-tools_2.12/0.6.28/scalajs-tools_2.12-0.6.28.pom"/>
+				<caller organisation="org.scala-js" name="sbt-scalajs" conf="compile" rev="0.6.28" rev-constraint-default="0.6.28" rev-constraint-dynamic="0.6.28" callerrev="0.6.28" extra-info.apiURL="http://www.scala-js.org/api/scalajs-tools/0.6.28/"/>
+				<caller organisation="org.scala-js" name="scalajs-js-envs_2.12" conf="default, compile, runtime, master" rev="0.6.28" rev-constraint-default="0.6.28" rev-constraint-dynamic="0.6.28" callerrev="0.6.28"/>
+				<artifacts>
+					<artifact name="scalajs-tools_2.12" type="jar" ext="jar" status="successful" details="" size="1437356" time="9515" location="/home/xxh/.ivy2/cache/org.scala-js/scalajs-tools_2.12/jars/scalajs-tools_2.12-0.6.28.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-tools_2.12/0.6.28/scalajs-tools_2.12-0.6.28.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.json-simple" name="json-simple">
+			<revision name="1.1.1" status="release" pubdate="20120321131134" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/json-simple/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2986" time="0" location="/home/xxh/.ivy2/cache/com.googlecode.json-simple/json-simple/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-tools_2.12" conf="default, compile, runtime, master" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.6.28"/>
+				<artifacts>
+					<artifact name="json-simple" type="bundle" ext="jar" status="no" details="" size="23931" time="0" location="/home/xxh/.ivy2/cache/com.googlecode.json-simple/json-simple/bundles/json-simple-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.javascript" name="closure-compiler">
+			<revision name="v20190513" status="release" pubdate="20190515121204" resolver="public" artresolver="public" homepage="https://developers.google.com/closure/compiler/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="5108" time="981" location="/home/xxh/.ivy2/cache/com.google.javascript/closure-compiler/ivy-v20190513.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.google.javascript/closure-compiler/ivy-v20190513.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/javascript/closure-compiler/v20190513/closure-compiler-v20190513.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-tools_2.12" conf="default, compile, runtime, master" rev="v20190513" rev-constraint-default="v20190513" rev-constraint-dynamic="v20190513" callerrev="0.6.28"/>
+				<artifacts>
+					<artifact name="closure-compiler" type="jar" ext="jar" status="successful" details="" size="10504631" time="155781" location="/home/xxh/.ivy2/cache/com.google.javascript/closure-compiler/jars/closure-compiler-v20190513.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/javascript/closure-compiler/v20190513/closure-compiler-v20190513.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.jsinterop" name="jsinterop-annotations">
+			<revision name="1.0.0" status="release" pubdate="20160729000231" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<license name="GWT Terms" url="http://www.gwtproject.org/terms.html"/>
+				<metadata-artifact status="successful" details="" size="605" time="715" location="/home/xxh/.ivy2/cache/com.google.jsinterop/jsinterop-annotations/ivy-1.0.0.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.google.jsinterop/jsinterop-annotations/ivy-1.0.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/jsinterop/jsinterop-annotations/1.0.0/jsinterop-annotations-1.0.0.pom"/>
+				<caller organisation="com.google.javascript" name="closure-compiler" conf="compile, runtime" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="v20190513"/>
+				<artifacts>
+					<artifact name="jsinterop-annotations" type="jar" ext="jar" status="successful" details="" size="4075" time="729" location="/home/xxh/.ivy2/cache/com.google.jsinterop/jsinterop-annotations/jars/jsinterop-annotations-1.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/jsinterop/jsinterop-annotations/1.0.0/jsinterop-annotations-1.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.findbugs" name="jsr305">
+			<revision name="3.0.1" status="release" pubdate="20151009130635" resolver="public" artresolver="public" homepage="http://findbugs.sourceforge.net/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="4286" time="931" location="/home/xxh/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-3.0.1.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.google.code.findbugs/jsr305/ivy-3.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.pom"/>
+				<caller organisation="com.google.javascript" name="closure-compiler" conf="compile, runtime" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="v20190513"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="3.0.2" rev-constraint-default="3.0.2" rev-constraint-dynamic="3.0.2" callerrev="25.1-jre"/>
+				<artifacts>
+					<artifact name="jsr305" type="jar" ext="jar" status="successful" details="" size="19943" time="1821" location="/home/xxh/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-3.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.0.2" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.0.1"/>
+				<caller organisation="com.google.javascript" name="closure-compiler" conf="compile, runtime" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="v20190513"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="3.0.2" rev-constraint-default="3.0.2" rev-constraint-dynamic="3.0.2" callerrev="25.1-jre"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.gson" name="gson">
+			<revision name="2.7" status="release" pubdate="20160615075554" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1445" time="769" location="/home/xxh/.ivy2/cache/com.google.code.gson/gson/ivy-2.7.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.google.code.gson/gson/ivy-2.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.7/gson-2.7.pom"/>
+				<caller organisation="com.google.javascript" name="closure-compiler" conf="compile, runtime" rev="2.7" rev-constraint-default="2.7" rev-constraint-dynamic="2.7" callerrev="v20190513"/>
+				<artifacts>
+					<artifact name="gson" type="jar" ext="jar" status="successful" details="" size="231952" time="6017" location="/home/xxh/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.7/gson-2.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.protobuf" name="protobuf-java">
+			<revision name="3.0.2" status="release" pubdate="20160907075426" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="New BSD license" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="4051" time="995" location="/home/xxh/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-3.0.2.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.google.protobuf/protobuf-java/ivy-3.0.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.0.2/protobuf-java-3.0.2.pom"/>
+				<caller organisation="com.google.javascript" name="closure-compiler" conf="compile, runtime" rev="3.0.2" rev-constraint-default="3.0.2" rev-constraint-dynamic="3.0.2" callerrev="v20190513"/>
+				<artifacts>
+					<artifact name="protobuf-java" type="bundle" ext="jar" status="successful" details="" size="1304415" time="40927" location="/home/xxh/.ivy2/cache/com.google.protobuf/protobuf-java/bundles/protobuf-java-3.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.0.2/protobuf-java-3.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.guava" name="guava">
+			<revision name="25.1-jre" status="release" pubdate="20180524015806" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="7775" time="1662" location="/home/xxh/.ivy2/cache/com.google.guava/guava/ivy-25.1-jre.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.google.guava/guava/ivy-25.1-jre.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.pom"/>
+				<caller organisation="com.google.javascript" name="closure-compiler" conf="compile, runtime" rev="25.1-jre" rev-constraint-default="25.1-jre" rev-constraint-dynamic="25.1-jre" callerrev="v20190513"/>
+				<artifacts>
+					<artifact name="guava" type="bundle" ext="jar" status="successful" details="" size="2734339" time="64163" location="/home/xxh/.ivy2/cache/com.google.guava/guava/bundles/guava-25.1-jre.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/guava/guava/25.1-jre/guava-25.1-jre.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.mojo" name="animal-sniffer-annotations">
+			<revision name="1.14" status="release" pubdate="20150226005330" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<license name="MIT license" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="successful" details="" size="2540" time="1226" location="/home/xxh/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/ivy-1.14.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/ivy-1.14.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.pom"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="1.14" rev-constraint-default="1.14" rev-constraint-dynamic="1.14" callerrev="25.1-jre"/>
+				<artifacts>
+					<artifact name="animal-sniffer-annotations" type="jar" ext="jar" status="successful" details="" size="3482" time="742" location="/home/xxh/.ivy2/cache/org.codehaus.mojo/animal-sniffer-annotations/jars/animal-sniffer-annotations-1.14.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.j2objc" name="j2objc-annotations">
+			<revision name="1.1" status="release" pubdate="20170119070659" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/google/j2objc/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3174" time="0" location="/home/xxh/.ivy2/cache/com.google.j2objc/j2objc-annotations/ivy-1.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="25.1-jre"/>
+				<artifacts>
+					<artifact name="j2objc-annotations" type="jar" ext="jar" status="no" details="" size="8782" time="0" location="/home/xxh/.ivy2/cache/com.google.j2objc/j2objc-annotations/jars/j2objc-annotations-1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.checkerframework" name="checker-qual">
+			<revision name="2.0.0" status="release" pubdate="20160503103842" resolver="public" artresolver="public" homepage="http://checkerframework.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="36">
+				<license name="GNU General Public License, version 2 (GPL2), with the classpath exception" url="http://www.gnu.org/software/classpath/license.html"/>
+				<license name="The MIT License" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="successful" details="" size="4198" time="1039" location="/home/xxh/.ivy2/cache/org.checkerframework/checker-qual/ivy-2.0.0.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/org.checkerframework/checker-qual/ivy-2.0.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.0.pom"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="2.0.0" rev-constraint-default="2.0.0" rev-constraint-dynamic="2.0.0" callerrev="25.1-jre"/>
+				<artifacts>
+					<artifact name="checker-qual" type="jar" ext="jar" status="successful" details="" size="343222" time="7710" location="/home/xxh/.ivy2/cache/org.checkerframework/checker-qual/jars/checker-qual-2.0.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/checkerframework/checker-qual/2.0.0/checker-qual-2.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.errorprone" name="error_prone_annotations">
+			<revision name="2.3.1" status="release" pubdate="20180421051728" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1784" time="1430" location="/home/xxh/.ivy2/cache/com.google.errorprone/error_prone_annotations/ivy-2.3.1.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.google.errorprone/error_prone_annotations/ivy-2.3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.3.1/error_prone_annotations-2.3.1.pom"/>
+				<caller organisation="com.google.javascript" name="closure-compiler" conf="compile, runtime" rev="2.3.1" rev-constraint-default="2.3.1" rev-constraint-dynamic="2.3.1" callerrev="v20190513"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="2.1.3" rev-constraint-default="2.1.3" rev-constraint-dynamic="2.1.3" callerrev="25.1-jre"/>
+				<artifacts>
+					<artifact name="error_prone_annotations" type="jar" ext="jar" status="successful" details="" size="13162" time="1769" location="/home/xxh/.ivy2/cache/com.google.errorprone/error_prone_annotations/jars/error_prone_annotations-2.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.3.1/error_prone_annotations-2.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.1.3" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.3.1"/>
+				<caller organisation="com.google.guava" name="guava" conf="compile, runtime" rev="2.1.3" rev-constraint-default="2.1.3" rev-constraint-dynamic="2.1.3" callerrev="25.1-jre"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="args4j" name="args4j">
+			<revision name="2.0.26" status="release" pubdate="20131103090025" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="successful" details="" size="1292" time="1189" location="/home/xxh/.ivy2/cache/args4j/args4j/ivy-2.0.26.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/args4j/args4j/ivy-2.0.26.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/args4j/args4j/2.0.26/args4j-2.0.26.pom"/>
+				<caller organisation="com.google.javascript" name="closure-compiler" conf="compile, runtime" rev="2.0.26" rev-constraint-default="2.0.26" rev-constraint-dynamic="2.0.26" callerrev="v20190513"/>
+				<artifacts>
+					<artifact name="args4j" type="bundle" ext="jar" status="successful" details="" size="74703" time="2268" location="/home/xxh/.ivy2/cache/args4j/args4j/bundles/args4j-2.0.26.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/args4j/args4j/2.0.26/args4j-2.0.26.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.javascript" name="closure-compiler-externs">
+			<revision name="v20190513" status="release" pubdate="20190515120350" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="2330" time="766" location="/home/xxh/.ivy2/cache/com.google.javascript/closure-compiler-externs/ivy-v20190513.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.google.javascript/closure-compiler-externs/ivy-v20190513.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/javascript/closure-compiler-externs/v20190513/closure-compiler-externs-v20190513.pom"/>
+				<caller organisation="com.google.javascript" name="closure-compiler" conf="compile, runtime" rev="v20190513" rev-constraint-default="v20190513" rev-constraint-dynamic="v20190513" callerrev="v20190513"/>
+				<artifacts>
+					<artifact name="closure-compiler-externs" type="jar" ext="jar" status="successful" details="" size="198907" time="7037" location="/home/xxh/.ivy2/cache/com.google.javascript/closure-compiler-externs/jars/closure-compiler-externs-v20190513.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/javascript/closure-compiler-externs/v20190513/closure-compiler-externs-v20190513.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-js" name="scalajs-ir_2.12">
+			<revision name="0.6.28" status="release" pubdate="20190524000139" resolver="public" artresolver="public" homepage="https://www.scala-js.org/" extra-info.apiURL="http://www.scala-js.org/api/scalajs-ir/0.6.28/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2240" time="875" location="/home/xxh/.ivy2/cache/org.scala-js/scalajs-ir_2.12/ivy-0.6.28.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/org.scala-js/scalajs-ir_2.12/ivy-0.6.28.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-js/scalajs-ir_2.12/0.6.28/scalajs-ir_2.12-0.6.28.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-tools_2.12" conf="default, compile, runtime, master" rev="0.6.28" rev-constraint-default="0.6.28" rev-constraint-dynamic="0.6.28" callerrev="0.6.28"/>
+				<artifacts>
+					<artifact name="scalajs-ir_2.12" type="jar" ext="jar" status="successful" details="" size="525735" time="15336" location="/home/xxh/.ivy2/cache/org.scala-js/scalajs-ir_2.12/jars/scalajs-ir_2.12-0.6.28.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-js/scalajs-ir_2.12/0.6.28/scalajs-ir_2.12-0.6.28.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.eed3si9n" name="sbt-unidoc">
+			<revision name="0.4.2" status="release" pubdate="20180611112558" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*)" position="26">
+				<metadata-artifact status="successful" details="" size="1500" time="1789" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.eed3si9n/sbt-unidoc/ivy-0.4.2.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.eed3si9n/sbt-unidoc/ivy-0.4.2.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-unidoc/scala_2.12/sbt_1.0/0.4.2/ivys/ivy.xml"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="publish-unidoc" conf="compile, runtime" rev="0.4.2" rev-constraint-default="0.4.2" rev-constraint-dynamic="0.4.2" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="travis" conf="compile, runtime" rev="0.4.2" rev-constraint-default="0.4.2" rev-constraint-dynamic="0.4.2" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-unidoc" type="jar" ext="jar" status="successful" details="" size="45292" time="2611" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.eed3si9n/sbt-unidoc/jars/sbt-unidoc-0.4.2.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-unidoc/scala_2.12/sbt_1.0/0.4.2/jars/sbt-unidoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jsuereth" name="scala-arm_2.12">
+			<revision name="2.0" status="release" pubdate="20161116070422" resolver="public" artresolver="public" homepage="http://jsuereth.com/scala-arm" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="BSD-Style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="2256" time="881" location="/home/xxh/.ivy2/cache/com.jsuereth/scala-arm_2.12/ivy-2.0.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.jsuereth/scala-arm_2.12/ivy-2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jsuereth/scala-arm_2.12/2.0/scala-arm_2.12-2.0.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="travis" conf="compile, runtime" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="7.1.1+30-e02c4a9e"/>
+				<artifacts>
+					<artifact name="scala-arm_2.12" type="jar" ext="jar" status="successful" details="" size="82674" time="2053" location="/home/xxh/.ivy2/cache/com.jsuereth/scala-arm_2.12/jars/scala-arm_2.12-2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jsuereth/scala-arm_2.12/2.0/scala-arm_2.12-2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.sbt-best-practice" name="detect-license">
+			<revision name="7.1.1+30-e02c4a9e" status="release" pubdate="20190831134754" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/sbt-best-practice" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="3757" time="992" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/detect-license/ivy-7.1.1+30-e02c4a9e.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/detect-license/ivy-7.1.1+30-e02c4a9e.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/detect-license_2.12_1.0/7.1.1+30-e02c4a9e/detect-license-7.1.1+30-e02c4a9e.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="sbt-best-practice" conf="default, compile, runtime, master" rev="7.1.1+30-e02c4a9e" rev-constraint-default="7.1.1+30-e02c4a9e" rev-constraint-dynamic="7.1.1+30-e02c4a9e" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="detect-license" type="jar" ext="jar" status="successful" details="" size="13895" time="6004" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/detect-license/jars/detect-license-7.1.1+30-e02c4a9e.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/detect-license_2.12_1.0/7.1.1+30-e02c4a9e/detect-license-7.1.1+30-e02c4a9e.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.sbt-best-practice" name="git">
+			<revision name="7.1.1+30-e02c4a9e" status="release" pubdate="20190831134748" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/sbt-best-practice" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="3436" time="3965" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/git/ivy-7.1.1+30-e02c4a9e.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/git/ivy-7.1.1+30-e02c4a9e.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/git_2.12_1.0/7.1.1+30-e02c4a9e/git-7.1.1+30-e02c4a9e.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="sbt-best-practice" conf="default, compile, runtime, master" rev="7.1.1+30-e02c4a9e" rev-constraint-default="7.1.1+30-e02c4a9e" rev-constraint-dynamic="7.1.1+30-e02c4a9e" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="travis" conf="compile, runtime" rev="7.1.1+30-e02c4a9e" rev-constraint-default="7.1.1+30-e02c4a9e" rev-constraint-dynamic="7.1.1+30-e02c4a9e" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="detect-license" conf="compile, runtime" rev="7.1.1+30-e02c4a9e" rev-constraint-default="7.1.1+30-e02c4a9e" rev-constraint-dynamic="7.1.1+30-e02c4a9e" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="git" type="jar" ext="jar" status="successful" details="" size="10342" time="3842" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/git/jars/git-7.1.1+30-e02c4a9e.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/git_2.12_1.0/7.1.1+30-e02c4a9e/git-7.1.1+30-e02c4a9e.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit">
+			<revision name="5.4.2.201908231537-r" status="release" pubdate="20190824081406" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Eclipse Distribution License (New BSD License)"/>
+				<metadata-artifact status="successful" details="" size="9770" time="1130" location="/home/xxh/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/ivy-5.4.2.201908231537-r.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/ivy-5.4.2.201908231537-r.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/5.4.2.201908231537-r/org.eclipse.jgit-5.4.2.201908231537-r.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="git" conf="compile, runtime" rev="5.4.2.201908231537-r" rev-constraint-default="5.4.2.201908231537-r" rev-constraint-dynamic="5.4.2.201908231537-r" callerrev="7.1.1+30-e02c4a9e"/>
+				<artifacts>
+					<artifact name="org.eclipse.jgit" type="jar" ext="jar" status="successful" details="" size="2766192" time="83133" location="/home/xxh/.ivy2/cache/org.eclipse.jgit/org.eclipse.jgit/jars/org.eclipse.jgit-5.4.2.201908231537-r.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/5.4.2.201908231537-r/org.eclipse.jgit-5.4.2.201908231537-r.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bouncycastle" name="bcpkix-jdk15on">
+			<revision name="1.61" status="release" pubdate="20190211160656" resolver="public" artresolver="public" homepage="http://www.bouncycastle.org/java.html" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
+				<metadata-artifact status="successful" details="" size="1467" time="711" location="/home/xxh/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/ivy-1.61.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/ivy-1.61.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.61/bcpkix-jdk15on-1.61.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="1.61" rev-constraint-default="1.61" rev-constraint-dynamic="1.61" callerrev="5.4.2.201908231537-r"/>
+				<artifacts>
+					<artifact name="bcpkix-jdk15on" type="jar" ext="jar" status="successful" details="" size="866346" time="24771" location="/home/xxh/.ivy2/cache/org.bouncycastle/bcpkix-jdk15on/jars/bcpkix-jdk15on-1.61.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bouncycastle/bcpkix-jdk15on/1.61/bcpkix-jdk15on-1.61.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bouncycastle" name="bcpg-jdk15on">
+			<revision name="1.61" status="release" pubdate="20190211161055" resolver="public" artresolver="public" homepage="http://www.bouncycastle.org/java.html" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
+				<license name="Apache Software License, Version 1.1" url="http://www.apache.org/licenses/LICENSE-1.1"/>
+				<metadata-artifact status="successful" details="" size="1585" time="1050" location="/home/xxh/.ivy2/cache/org.bouncycastle/bcpg-jdk15on/ivy-1.61.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/org.bouncycastle/bcpg-jdk15on/ivy-1.61.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk15on/1.61/bcpg-jdk15on-1.61.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="1.61" rev-constraint-default="1.61" rev-constraint-dynamic="1.61" callerrev="5.4.2.201908231537-r"/>
+				<artifacts>
+					<artifact name="bcpg-jdk15on" type="jar" ext="jar" status="successful" details="" size="325650" time="1225" location="/home/xxh/.ivy2/cache/org.bouncycastle/bcpg-jdk15on/jars/bcpg-jdk15on-1.61.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bouncycastle/bcpg-jdk15on/1.61/bcpg-jdk15on-1.61.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.bouncycastle" name="bcprov-jdk15on">
+			<revision name="1.61" status="release" pubdate="20190211160521" resolver="public" artresolver="public" homepage="http://www.bouncycastle.org/java.html" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Bouncy Castle Licence" url="http://www.bouncycastle.org/licence.html"/>
+				<metadata-artifact status="successful" details="" size="1143" time="695" location="/home/xxh/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/ivy-1.61.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/ivy-1.61.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.61/bcprov-jdk15on-1.61.pom"/>
+				<caller organisation="org.bouncycastle" name="bcpg-jdk15on" conf="compile, runtime" rev="1.61" rev-constraint-default="1.61" rev-constraint-dynamic="1.61" callerrev="1.61"/>
+				<caller organisation="org.bouncycastle" name="bcpkix-jdk15on" conf="compile, runtime" rev="1.61" rev-constraint-default="1.61" rev-constraint-dynamic="1.61" callerrev="1.61"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="1.61" rev-constraint-default="1.61" rev-constraint-dynamic="1.61" callerrev="5.4.2.201908231537-r"/>
+				<artifacts>
+					<artifact name="bcprov-jdk15on" type="jar" ext="jar" status="successful" details="" size="4543663" time="214473" location="/home/xxh/.ivy2/cache/org.bouncycastle/bcprov-jdk15on/jars/bcprov-jdk15on-1.61.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/bouncycastle/bcprov-jdk15on/1.61/bcprov-jdk15on-1.61.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.2" status="release" pubdate="20121012025524" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="4383" time="0" location="/home/xxh/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="1.7.2" rev-constraint-default="1.7.2" rev-constraint-dynamic="1.7.2" callerrev="5.4.2.201908231537-r"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="successful" details="" size="26083" time="2061" location="/home/xxh/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.javaewah" name="JavaEWAH">
+			<revision name="1.1.6" status="release" pubdate="20160427104037" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lemire/javaewah" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4315" time="0" location="/home/xxh/.ivy2/cache/com.googlecode.javaewah/JavaEWAH/ivy-1.1.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="1.1.6" rev-constraint-default="1.1.6" rev-constraint-dynamic="1.1.6" callerrev="5.4.2.201908231537-r"/>
+				<artifacts>
+					<artifact name="JavaEWAH" type="bundle" ext="jar" status="no" details="" size="165868" time="0" location="/home/xxh/.ivy2/cache/com.googlecode.javaewah/JavaEWAH/bundles/JavaEWAH-1.1.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/1.1.6/JavaEWAH-1.1.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jcraft" name="jzlib">
+			<revision name="1.1.1" status="release" pubdate="20120223210315" resolver="public" artresolver="public" homepage="http://www.jcraft.com/jzlib/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="Revised BSD" url="http://www.jcraft.com/jzlib/LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="3074" time="709" location="/home/xxh/.ivy2/cache/com.jcraft/jzlib/ivy-1.1.1.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/com.jcraft/jzlib/ivy-1.1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jcraft/jzlib/1.1.1/jzlib-1.1.1.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="5.4.2.201908231537-r"/>
+				<artifacts>
+					<artifact name="jzlib" type="jar" ext="jar" status="successful" details="" size="69578" time="754" location="/home/xxh/.ivy2/cache/com.jcraft/jzlib/jars/jzlib-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jcraft/jzlib/1.1.1/jzlib-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jcraft" name="jsch">
+			<revision name="0.1.55" status="release" pubdate="20181126091542" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.jcraft.com/jsch/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="Revised BSD" url="http://www.jcraft.com/jsch/LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3235" time="0" location="/home/xxh/.ivy2/cache/com.jcraft/jsch/ivy-0.1.55.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="0.1.55" rev-constraint-default="0.1.55" rev-constraint-dynamic="0.1.55" callerrev="5.4.2.201908231537-r"/>
+				<artifacts>
+					<artifact name="jsch" type="jar" ext="jar" status="no" details="" size="282591" time="0" location="/home/xxh/.ivy2/cache/com.jcraft/jsch/jars/jsch-0.1.55.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.sbt-best-practice" name="scalac-options">
+			<revision name="7.1.1+30-e02c4a9e" status="release" pubdate="20190831134800" resolver="public" artresolver="public" homepage="https://github.com/ThoughtWorksInc/sbt-best-practice" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Apache" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="successful" details="" size="3272" time="1008" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/scalac-options/ivy-7.1.1+30-e02c4a9e.xml" searched="true" original-local-location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/scalac-options/ivy-7.1.1+30-e02c4a9e.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/scalac-options_2.12_1.0/7.1.1+30-e02c4a9e/scalac-options-7.1.1+30-e02c4a9e.pom"/>
+				<caller organisation="com.thoughtworks.sbt-best-practice" name="sbt-best-practice" conf="default, compile, runtime, master" rev="7.1.1+30-e02c4a9e" rev-constraint-default="7.1.1+30-e02c4a9e" rev-constraint-dynamic="7.1.1+30-e02c4a9e" callerrev="7.1.1+30-e02c4a9e" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="scalac-options" type="jar" ext="jar" status="successful" details="" size="27079" time="4410" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.thoughtworks.sbt-best-practice/scalac-options/jars/scalac-options-7.1.1+30-e02c4a9e.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/sbt-best-practice/scalac-options_2.12_1.0/7.1.1+30-e02c4a9e/scalac-options-7.1.1+30-e02c4a9e.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.typesafe.sbt" name="sbt-native-packager">
 			<revision name="1.3.22" status="release" pubdate="20190528201222" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
 				<metadata-artifact status="no" details="" size="3545" time="0" location="/home/xxh/.ivy2/cache/scala_2.12/sbt_1.0/com.typesafe.sbt/sbt-native-packager/ivy-1.3.22.xml" searched="false" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.12/sbt_1.0/1.3.22/ivys/ivy.xml"/>
@@ -134,7 +785,7 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-sbt" name="global-plugins">
-			<revision name="0.0" status="integration" pubdate="20190714155446" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+			<revision name="0.0" status="integration" pubdate="20190910165529" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="default" name="bangchuizi-build" conf="test, compile, runtime" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
 				<artifacts>
@@ -145,9 +796,23 @@
 			<revision name="2.12.7" status="release" pubdate="20180927163542" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.7/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
 				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
 				<metadata-artifact status="no" details="" size="2471" time="0" location="/home/xxh/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.7.xml" searched="false" origin-is-local="false" origin-location="https://oss.sonatype.org/content/repositories/releases/org/scala-lang/scala-library/2.12.7/scala-library-2.12.7.pom"/>
+				<caller organisation="org.scala-js" name="scalajs-sbt-test-adapter_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.6.28"/>
 				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.1.1"/>
-				<caller organisation="org.scala-sbt" name="io_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.2.2"/>
+				<caller organisation="com.lihaoyi" name="sourcecode_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.1.7"/>
+				<caller organisation="org.scala-js" name="scalajs-js-envs_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.6.28"/>
+				<caller organisation="com.thoughtworks.extractor" name="extractor_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.1.1"/>
 				<caller organisation="org.scala-lang.modules" name="scala-xml_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.1.1"/>
+				<caller organisation="com.jsuereth" name="scala-arm_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.0"/>
+				<caller organisation="com.thoughtworks.dsl" name="keywords-continue_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.5.1"/>
+				<caller organisation="com.thoughtworks.dsl" name="keywords-each_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.5.1"/>
+				<caller organisation="com.thoughtworks.dsl" name="keywords-shift_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.5.1"/>
+				<caller organisation="com.thoughtworks.dsl" name="dsl_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.5.1"/>
+				<caller organisation="com.thoughtworks.enableIf" name="enableif_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.1.7"/>
+				<caller organisation="org.scala-js" name="scalajs-ir_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.6.28"/>
+				<caller organisation="org.scala-js" name="scalajs-tools_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="0.6.28"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="2.12.7"/>
+				<caller organisation="com.thoughtworks.dsl" name="keywords-return_2.12" conf="compile, runtime" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.5.1"/>
+				<caller organisation="org.scala-sbt" name="io_2.12" conf="default, compile, runtime, master" rev="2.12.7" rev-constraint-default="2.12.7" rev-constraint-dynamic="2.12.7" callerrev="1.2.2"/>
 				<artifacts>
 					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5277511" time="0" location="/home/xxh/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.7.jar">
 						<origin-location is-local="false" location="UNKNOWN"/>
